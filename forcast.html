@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Weather4Cast API | Forcast Page</title>
+    <meta name="author" content="Peace Arikpo">
+    <meta property="og:title" content="WDD 330 Project | Peace Arikpo">
+    <meta property="og:type" content="Personal Website">
+    <meta property="og:image" content="images/logo.svg">
+    <meta property="og:url" content="https://peace-23.github.io/wdd230/">
+    <meta name="description" content="WDD 330 | Course Project | Peace Arikpo ">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css" id="css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" href="images/icons8-weather-cloud-70.ico">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu ">
+            <li class="nav-item">
+                <a href="#" class="nav-link" target="_blank">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://127.0.0.1:5500/forcast.html" class="nav-link" target="_blank">Forecast</a>
+            </li>
+            <li class="nav-item">
+                <a href="http://127.0.0.1:5500/index.html#" class="nav-link" target="_blank">Home</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <img class="hamb-menu" src="images/menu.svg" width="25" height="25" alt="menu">
+            <img class="x-menu" src="images/x.svg" width="25" height="25" alt="menu">
+        </div>
+        <div class="logo">
+            <a href="#">
+                <img src="/images/logo.svg" alt="weather logo">
+                Weather
+                <span class="spotlight">4</span>
+                Cast
+            </a>
+            </svg>
+        </div>
+    </nav>
+    <header>
+        <!-- No Header for this page -->
+    </header>
+    <main>
+        <div class="main">
+            <nav>
+                <ul class="options">
+                    <button class="hourly">today</button>
+                    <button class="week active">week</button>
+                </ul>
+                <ul class="options units">
+                    <button class="celcius active">°C</button>
+                    <button class="fahrenheit">°F</button>
+                </ul>
+            </nav>
+            <h1 class="headerForcast">Welcome to the Weather4cast App</h1>
+            <div class="w3-container w3-theme w3-padding-16">
+                <input type="text" id="city" placeholder="Enter a city name">
+                <button id="getWeather">Search</button>
+                <h2 class="heading">5 Day's | 3 Hour highlight</h2>
+                <div id="weatherList" class="grid-container"></div>
+    </main>
+    <footer id="main-footer">
+        <p>
+            &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>
+            | Peace Arikpo | Nigeria 
+        </p>
+        <p class="credit">
+            Credit:<a target="_blank" href="https://icons8.com/icon/bILLAxIx8ASv/weather"> Weather</a>
+            icon by
+            <a target="_blank" href="https://icons8.com">Icons8</a> | Jonah Lawrence - DevProTips
+        </p>
+        <p class="highlight" id="lastModified">
+            <script>
+                const date = new Date(document.lastModified);
+                document.getElementById("lastModified").innerHTML = date;
+            </script>
+        </p>
+    </footer>
+</body>
+<script src="js/weather.js"></script>
+<script src="js/hamburger.js"></script>
+<script src="js/script.js"></script>
+<script src="js/search.js"></script>
+<script src="js/weather.js"></script>
+
+</html>
